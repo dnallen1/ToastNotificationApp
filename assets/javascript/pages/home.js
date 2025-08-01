@@ -10,7 +10,6 @@ document.addEventListener("DOMContentLoaded", () => {
 })
 
 
-
 document.getElementById('hello-btn').addEventListener('click', () => {
     showToast('Hello!!', ['other'], 3000);
 });
@@ -23,8 +22,8 @@ document.getElementById('warning-btn').addEventListener('click', () => {
     showToast('This is your warning message!', ['warning'], 3000);
 });
 
-document.getElementById('failure-btn').addEventListener('click', () => {
-    showToast('Uh oh, something went wrong. Please try again later.', ['failure'], 3000);
+document.getElementById('error-btn').addEventListener('click', () => {
+    showToast('Uh oh, something went wrong. Please try again later.', ['error'], 3000);
 });
 
 document.getElementById('long-btn').addEventListener('click', () => {
