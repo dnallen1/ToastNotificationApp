@@ -1,0 +1,133 @@
+/* ==========================================================================
+   File: containers.css
+   Description: Styles for section containers
+   ========================================================================= */
+
+.full-width-container {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    min-height: 20vh;
+    background: linear-gradient(to left, color-mix(in srgb, var(--primary) 60%, white 40%), var(--primary));
+}
+  
+.full-width-container .panel {
+    flex: 1 1 200px;  
+    display: flex; 
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 1rem;
+    box-sizing: border-box;
+    color:var(--cream);
+}
+
+.full-width-container.panel-svg {
+    width: 50%;
+    height: auto;
+}
+
+.panel:first-child {
+    flex-grow: 3;
+}
+
+.panel:not(:first-child) {
+    flex-grow: 1;
+    /* background-color: color-mix(in srgb, var(--primary) 80%, white 20%); */
+}
+
+.center-container {
+    display: flex;
+    flex-direction: column;       
+    justify-content: center;       
+    align-items: center;           
+    height: 20%;                 
+    padding: 2rem;
+    text-align: center;
+    background-color: var(--cream);
+}
+  
+.center-container .panel {
+    display: flex;
+    flex-direction: column;        
+    align-items: center;
+    justify-content: center;
+    color: var(--secondary);
+    padding: 1.5rem;
+    border-radius: 10px;
+    margin-bottom: 2rem;           
+    max-width: 600px;
+}
+
+.panel-svg {
+    width: 50px;
+    height: auto;
+    margin-bottom: 1rem;         
+}
+  
+.center-container.panel-text {
+    margin-bottom: 1rem;
+}
+  
+
+.rounded-container {
+    display: flex;               /* make children sit horizontally */
+    gap: 1rem;                  /* space between panels */
+    border-radius: 1rem;        /* rounded corners on container */
+    overflow: hidden;           /* clip child corners if needed */
+    background: var(--primary); /* optional bg color */
+    padding: 1rem;
+  }
+  
+.rounded-container .panel {
+    flex: 1;                    /* equal width */
+    background: white;          /* white bg inside container */
+    border-radius: 1rem;        /* round each panel's corners */
+    padding: 1rem;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+
+.rounded-container .panel-divider {
+    border: none;
+    border-top: 1px solid black; /* Adjust color as needed */
+    margin: 0.75rem 0;
+    width: 100%;
+}
+.rounded-container .panel-header {
+    color:black;
+    font-weight: bold;
+    
+}
+
+
+.rounded-container .panel-text {
+    color:black;
+}
+
+.joke-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 2rem;
+    text-align: center;
+    /* margin-top: 2rem; */
+    background-color: #f5f5f5;
+    border-radius: 8px;
+    font-size: 1.2rem;
+    height:8%;
+}
+
+.joke-container .panel-intro {
+    font-weight: bold;
+    margin-right: 1rem;
+}
+
+.joke-container .panel-text {
+    margin: 0;
+}

@@ -1,0 +1,41 @@
+/* ==========================================================================
+   File: home.css
+   Description: Styles for unique styles on homepage
+   ========================================================================= */
+
+@import '../layout/toast.css';
+@import '../layout/containers.css';
+
+.banner {
+  position: relative;
+  left: -30px;
+  overflow-x: hidden;
+  background: var(--cream);
+  display: flex;
+  align-items: center; 
+  justify-content: space-between;
+  padding: 20px 30px;  
+  box-sizing: border-box;
+}
+  
+.banner-text {
+  flex: 1;
+  color: var(--primary);
+  font-size: 1.5rem;
+  display: flex;             
+  flex-direction: column;    
+  justify-content: center;   
+  align-items: center;       
+  text-align: center;       
+  padding: 0 20px;           
+}
+  
+.banner-image {
+  flex: 1;               
+  max-width: 50%;     
+  display: flex;
+  justify-content: flex-end;
+}
+  
+
+  

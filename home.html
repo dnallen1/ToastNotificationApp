@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toast Notification System</title> 
+    <link rel="stylesheet" href="assets/stylesheets/pages/home.css">
+    <link rel="stylesheet" href="assets/stylesheets/main.css">
+</head>
+
+
+<body>
+    
+    <nav class="navbar">
+        <!-- You can add in navigation or main logo to navBar -->
+    </nav>
+      
+    <main class="container">
+      
+        <section class='banner'>
+            <section class="banner-text">
+                <h1>Welcome to the Toast Notifcation System!</h1>
+                <p>Explore the different types of toasts that can be portrayed</p>
+                <button id="hello-btn" class='btn secondary'>Try it out!</button>
+            </section>
+            <!-- Source of image: https://www.mindfulchef.com/ -->
+            <img class='banner-img' src='assets/images/HeroRecipeBoxWithVegetables.png' alt="Hero Recipe Box with Vegetables"></img>
+        </section>
+
+        <!-- All svg images were pulled from FontAwesome -->
+        <!-- !Font Awesome Free v7.0.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc. -->
+        <section class="full-width-container">
+            <article class="panel">
+                <h2 class='panel-text'>Press a button, get a toast!</h2>
+                <h3 class='panel-text'>Explore the different flavors of notifications we’ve baked just for you.</h3>
+            </article>
+            <button id="success-btn" class="panel">
+                <h2 class='panel-text'>Success</h2>
+                <img class="panel-svg" src="assets/images/thumbs-up-solid-full.svg" alt="thumbs up icon"></img> 
+            </button>
+            <button id="warning-btn" class="panel">
+                <h2 class='panel-text'>Warning</h2>
+                <img class="panel-svg" src="assets/images/triangle-exclamation-solid-full.svg" alt="exclamation triangle icon"></img> 
+            </button>
+            <button id="failure-btn" class="panel">
+                <h2 class='panel-text'>Failure</h2>
+                <img class="panel-svg" src="assets/images/circle-xmark-solid-full.svg" atl="circle with x icon"></img> 
+            </button>
+        </section>
+
+
+        <section class="center-container">
+            <article class="panel">
+                <h2 class='panel-text'>Sometimes a toast might take awhile longer to read than others.</h2>
+                <h3 class='panel-text'>When you hover over a toast, it will no longer disappear. This will give you lots of time to read it.</h3>
+                <button id="long-btn" class='btn primary'>Try it out!</button>
+            </article>
+        </section>
+
+
+        <section class="rounded-container">
+            <button id="timer-btn" class="panel">
+                <h1 class='panel-header'>Toast Timer</h1>
+                <hr class="panel-divider">
+                <h2 class='panel-text'>What if you want to see how long a message will stay visible</h2>
+                <h3 class='panel-text'>Click me to see a timer toast message!</h3>
+            </button>
+            <button id="undo-btn" class="panel">
+                <h1 class='panel-header'>Toast Undo</h1>
+                <hr class="panel-divider">
+                <h2 class='panel-text'>Perhaps you didn't get to read a toast message before it disappeared?</h2>
+                <h3 class='panel-text'>Click me to see how you can undo a toast message whose timer has finished!</h3>
+            </button>
+        </section>
+
+        <section class="joke-container">
+            <article>
+                <p class="panel-intro">Thanks for taking a look through my Toast Notification System!</p>
+                <p class="panel-text">Why did the pie go to the dentist? <button id="joke-btn" class="btn primary">Tell Me</button></p>
+            </article>
+            
+        </section>
+    </main>
+
+    <script src="assets/javascript/pages/home.js"></script> <!-- Main script to display toast message -->
+    <script src="assets/javascript/toasts/toast.js"></script> <!-- Main script to display toast message -->
+    <script src="assets/javascript/toasts/toastTimer.js"></script> <!-- Main script to display toast message with timer bar -->
+    <script src="assets/javascript/toasts/toastUndo.js"></script> <!-- Main script to display toast message with undo button -->
+
+  </body>
+</html>
